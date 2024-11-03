@@ -1,0 +1,115 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Conteneur principal plus large, avec une image de fond */
+.container {
+    width: 500px; /* Augmente la largeur */
+    max-width: 90%;
+    padding: 30px; /* Plus d’espace autour du contenu */
+    background: rgba(40, 222, 89, 0.498); /* Couleur de fond avec un léger effet de transparence */
+    border-radius: 10px;
+    box-shadow: 2px 8px 16px rgba(9, 206, 111, 0.8); /* Ombre plus profonde */
+    text-align: center;
+    background-image: url('imagefond.png'); 
+    background-size: cover;
+    background-position: center;
+}
+.contrainer::before{
+    background-color: rgba(0, 0, 0, 0.498);
+}
+
+/* Style pour le titre */
+h1 {
+    font-size: 2em; /* Titre plus grand */
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Champ de saisie */
+#task-input {
+    width: 80%; /* Plus large */
+    padding: 15px; /* Plus de padding */
+    font-size: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Espace entre le champ de saisie et le bouton */
+    box-sizing: border-box;
+}
+
+/* Bouton d'ajout de tâche */
+#add-task-btn {
+    padding: 15px 20px; /* Plus de padding */
+    font-size: 1em; /* Texte plus grand */
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Liste de tâches */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Espace au-dessus de la liste */
+}
+
+/* Style pour chaque élément de la liste */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Boutons dans chaque tâche */
+.complete-btn, .delete-btn {
+    margin-left: 8px;
+    border: none;
+    color: white;
+    padding: 8px 12px; /* Taille plus grande */
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Bouton pour marquer comme complet */
+.complete-btn {
+    background-color: #28a745;
+}
+
+.complete-btn:hover {
+    background-color: #218838;
+}
+
+/* Bouton pour supprimer */
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Style pour les tâches complétées */
+.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-style: italic;
+}
